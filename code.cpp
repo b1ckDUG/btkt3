@@ -2,14 +2,13 @@
 using namespace std;
 
 int lcm(int a, int b) {
-    int a1 = a;
-    int b1 = b;
+    int x = a*b;
     while (b!= 0) {
         int r = a%b;
         a = b;
         b = r;
     }
-    return a1*b1/a;
+    return x/a;
 }
 
 int main() {
